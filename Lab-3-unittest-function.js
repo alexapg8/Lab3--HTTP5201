@@ -8,7 +8,7 @@
  */
 function checkHumbrId(humberIn) {
     "use strict";
-    var RegExHumberId = /^(n|N)\d{8}/;
+    var RegExHumberId = /^(n|N)\d{8}$/;
 
     var validHumbrId = false;
     if (RegExHumberId.test(humberIn)) {

@@ -16,8 +16,10 @@ function test__checkHumbrId(value, expectedResult){
 test__checkHumbrId("n12345678", true);
 test__checkHumbrId("N12345678", true);
 test__checkHumbrId("Nn1234567", false);
-test__checkHumbrId("Nn1234567", true);
+test__checkHumbrId("Nn1234567", false);
 test__checkHumbrId("Nn12345678", false);
 test__checkHumbrId("Nn123456", false);
-test__checkHumbrId("Nn12345", true);
+test__checkHumbrId("Nn12345", false);
 test__checkHumbrId("N1234 678", false);
+test__checkHumbrId("n1234567", false);
+test__checkHumbrId("n123456789", false);
