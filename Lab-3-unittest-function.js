@@ -7,12 +7,12 @@
  * @param {string} idIn
  */
 function checkHumbrId(humberIn) {
-	var RegExHumberId = /^(n|N)\d{8}/;
-	
-	let validHumbrId = false;
-	if (RegExHumbrId.test(humberIn)){
-		validHumbrId = true;
-	}
-	
-	return validHumbrId;
+    "use strict";
+    var RegExHumberId = /^(n|N)\d{8}/;
+
+    var validHumbrId = false;
+    if (RegExHumberId.test(humberIn)) {
+        validHumbrId = true;
+    }
+    return validHumbrId;
 }
